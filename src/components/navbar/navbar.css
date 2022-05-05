@@ -1,0 +1,38 @@
+.n {
+  position: relative;
+  top: 40px;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.n-logo-image {
+  height: 50px;
+}
+
+.n-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.n-links-a {
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .n {
+    padding: 0 10px;
+  }
+  .n-links {
+    display: none;
+  }
+  .n-logo-image {
+    height: 30px;
+  }
+}
