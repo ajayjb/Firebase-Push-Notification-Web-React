@@ -1,4 +1,77 @@
 .o {
-  height: 75vh;
+  padding: 100px 250px;
   background-color: var(--bg-one-color);
+}
+
+.o-text-heading {
+  font-family: var(--font-family-futura);
+  font-size: 2.125rem;
+  font-weight: 400;
+  color: var(--font-three-color);
+  text-align: center;
+  margin: 0;
+}
+
+.o-text-desc {
+  font-family: var(--font-family-nunito);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--font-two-color);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  line-height: 2rem;
+}
+
+.o-process-flow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+
+.o-process-flow-order {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-process-flow-prepare {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-process-flow-deliver {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-process-flow-header {
+  margin: 0;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--font-three-color);
+}
+
+.o-process-flow-desc {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-family-poppins);
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--font-two-color);
+  line-height: 2rem;
 }

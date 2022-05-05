@@ -20,6 +20,7 @@
   background-color: var(--bg-three-color);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .i-heading-one {
@@ -32,7 +33,7 @@
 
 .i-heading-two {
   margin: 0;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-family: var(--font-family-futura);
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -60,7 +61,7 @@
 
 .i-mobile {
   position: absolute;
-  bottom: -15px;
+  bottom: -50px;
   right: 0;
   width: 62%;
 }

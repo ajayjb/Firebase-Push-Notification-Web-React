@@ -9,18 +9,26 @@ const NavBar = () => {
         <img className="n-logo-image" src={logo} alt="logo" />
       </div>
       <div className="n-links">
-        <a className="n-links-a" href="/">
-          ABOUT
-        </a>
-        <a className="n-links-a" href="/">
-          WHY
-        </a>
-        <a className="n-links-a" href="/">
-          HOW IT WORKS
-        </a>
-        <a className="n-links-a" href="/">
-          TESTIMONIAL
-        </a>
+        <div className="n-links-wrapper">
+          <a className="n-links-a" href="/">
+            ABOUT
+          </a>
+        </div>
+        <div className="n-links-wrapper">
+          <a className="n-links-a" href="/">
+            WHY
+          </a>
+        </div>
+        <div className="n-links-wrapper">
+          <a className="n-links-a" href="/">
+            HOW IT WORKS
+          </a>
+        </div>
+        <div className="n-links-wrapper">
+          <a className="n-links-a" href="/">
+            TESTIMONIAL
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -11,6 +11,10 @@
   height: 50px;
 }
 
+.n-links-wrapper {
+  position: relative;
+}
+
 .n-links {
   width: 50%;
   display: flex;
@@ -23,6 +27,30 @@
   font-weight: 500;
   font-size: 0.875rem;
   text-decoration: none;
+  color: var(--font-three-color);
+}
+
+.n-links-a::after {
+  content: "";
+  height: 2px;
+  background: var(--font-four-color);
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.n-links-a:hover::after {
+  animation: move 1s ease-in-out forwards;
+}
+
+@keyframes move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 480px) {
