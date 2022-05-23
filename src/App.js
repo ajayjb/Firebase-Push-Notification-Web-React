@@ -12,9 +12,7 @@ function App() {
       <Intro />
       <About />
       <Order />
-      <Products />
       <Testimonial />
-      <Download />
       <Footer />
     </div>
   );

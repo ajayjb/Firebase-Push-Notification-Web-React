@@ -10,6 +10,7 @@
   color: var(--font-three-color);
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .o-text-desc {

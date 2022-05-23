@@ -22,4 +22,12 @@
   --bg-two-color: #ffffff;
   --bg-three-color: #8ebc3e;
   --bg-four-color: #4e434d;
+  --bg-five-color: #cfcec2;
+  --bg-six-color: rgba(78, 67, 77, 0.35);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
