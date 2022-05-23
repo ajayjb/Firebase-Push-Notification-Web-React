@@ -1,6 +1,7 @@
 .o {
   padding: 100px 250px;
   background-color: var(--bg-one-color);
+  overflow: hidden;
 }
 
 .o-text-heading {

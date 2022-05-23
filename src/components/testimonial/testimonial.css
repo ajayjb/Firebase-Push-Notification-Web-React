@@ -1,5 +1,6 @@
 .t {
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .t-container {
@@ -112,7 +113,7 @@
   flex-shrink: 0;
   width: 680px;
   height: 352px;
-  background-color: #cfcec2;
+  background-color: #fbfcea;
 }
 
 .t-container-carousel-container-items-three {
@@ -120,7 +121,7 @@
   flex-shrink: 0;
   width: 680px;
   height: 352px;
-  background-color: rgba(78, 67, 77, 0.35);
+  background-color: #fbfcea;
 }
 
 .t-container-carousel-container-items-one-comment {
@@ -128,7 +129,7 @@
 }
 
 .t-container-carousel-container-items-one-comment > p {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   line-height: 2rem;
   font-family: var(--font-family-nunito);
   text-align: center;

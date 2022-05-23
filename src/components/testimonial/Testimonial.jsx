@@ -40,8 +40,8 @@ const Testimonial = () => {
           </p>
         </div>
 
-        <div onClick={leftSlide} className="t-container-carousel-container">
-          <div className="t-left-slider">
+        <div className="t-container-carousel-container">
+          <div onClick={leftSlide} className="t-left-slider">
             <img className="t-slider-image" src={left} alt="left arrow" />
           </div>
           <div className="t-slider-container">

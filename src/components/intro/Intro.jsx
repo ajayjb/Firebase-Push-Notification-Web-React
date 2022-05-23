@@ -3,6 +3,8 @@ import NavBar from "../navbar/NavBar";
 import "./intro.css";
 import mansion from "../../images/mansion.png";
 import mobile from "../../images/mobile.png";
+import Apple from "../../images/Apple.png";
+import Playstore from "../../images/Playstore.png";
 
 const Intro = () => {
   return (
@@ -17,7 +19,34 @@ const Intro = () => {
           morning and start your day with full of nutrition and freshness.
           Choose fresh, eat fresh and stay fresh with FRESHLIII.
         </p>
-        <button className="i-heading-button">Download</button>
+        <div className="i-heading-buttonsContainer">
+          <div className="i-heading-buttonsContainer-apple">
+            <img style={{ height: "40px", padding: "5px" }} src={Apple} />
+            <div
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontSize: "1.25rem",
+                fontWeight: "500",
+                padding: "5px",
+              }}
+            >
+              App Store
+            </div>
+          </div>
+          <div className="i-heading-buttonsContainer-playstore">
+            <img style={{ height: "40px", padding: "5px" }} src={Playstore} />
+            <div
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontSize: "1.25rem",
+                fontWeight: "500",
+                padding: "5px",
+              }}
+            >
+              Play Store
+            </div>
+          </div>
+        </div>
       </div>
       <img className="i-mansion" src={mansion} alt="" />
       <img className="i-mobile" src={mobile} alt="" />

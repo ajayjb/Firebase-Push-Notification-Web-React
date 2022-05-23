@@ -2,29 +2,51 @@
   height: 95vh;
   background-color: var(--bg-one-color);
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .i-heading {
-  margin-top: 90px;
+  margin-top: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.i-heading-button {
-  width: 168px;
-  height: 64px;
-  border-radius: 16px;
-  margin-top: 20px;
-  background-color: var(--bg-three-color);
-  border: none;
-  color: white;
+.i-heading-buttonsContainer {
+  display: flex;
+}
+
+.i-heading-buttonsContainer-apple {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(212, 219, 40, 0.25);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 30px 20px 0 0;
   cursor: pointer;
+  z-index: 5;
+}
+
+.i-heading-buttonsContainer-playstore {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(212, 219, 40, 0.25);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 30px 20px 0 0;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .i-heading-one {
   margin: 0;
+  margin-bottom: 15px;
   font-size: 28px;
   font-family: var(--font-family-poppins);
   font-weight: 400;
@@ -35,7 +57,7 @@
   margin: 0;
   font-size: 2.125rem;
   font-family: var(--font-family-futura);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   letter-spacing: 2px;
   font-weight: 400;
   color: var(--font-three-color);
@@ -64,4 +86,26 @@
   bottom: -50px;
   right: 0;
   width: 62%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .i-heading {
+    margin-top: 12.5vh;
+  }
+  .i-heading-one {
+    margin-bottom: 25px;
+  }
+  .i-heading-two {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .i {
+    height: 95vh;
+    background-color: var(--bg-one-color);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 }

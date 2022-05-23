@@ -24,6 +24,11 @@
   --bg-four-color: #4e434d;
   --bg-five-color: #cfcec2;
   --bg-six-color: rgba(78, 67, 77, 0.35);
+
+  --sm: 600px;
+  --ms: 960px;
+  --lg: 1280px;
+  --xl: 1920px;
 }
 
 * {
