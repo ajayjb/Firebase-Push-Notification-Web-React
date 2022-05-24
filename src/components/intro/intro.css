@@ -3,7 +3,6 @@
   background-color: var(--bg-one-color);
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 .i-heading {
@@ -16,6 +15,7 @@
 
 .i-heading-buttonsContainer {
   display: flex;
+  margin-top: 30px;
 }
 
 .i-heading-buttonsContainer-apple {
@@ -26,9 +26,21 @@
   border: 2px solid rgba(212, 219, 40, 0.25);
   border-radius: 12px;
   padding: 15px;
-  margin: 30px 20px 0 0;
+  margin-right: 20px;
   cursor: pointer;
   z-index: 5;
+}
+
+.i-heading-buttonsContainer-apple > img {
+  height: 40px;
+  padding: 5px;
+}
+
+.i-heading-buttonsContainer-apple > div {
+  font-family: var(--font-family-poppins);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .i-heading-buttonsContainer-playstore {
@@ -39,9 +51,21 @@
   border: 2px solid rgba(212, 219, 40, 0.25);
   border-radius: 12px;
   padding: 15px;
-  margin: 30px 20px 0 0;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 5;
+}
+
+.i-heading-buttonsContainer-playstore > img {
+  height: 40px;
+  padding: 5px;
+}
+
+.i-heading-buttonsContainer-playstore > div {
+  font-family: var(--font-family-poppins);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .i-heading-one {
@@ -67,8 +91,8 @@
   margin: 0;
   width: 30%;
   text-align: center;
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
   font-family: var(--font-family-poppins);
   font-weight: 400;
   color: var(--font-two-color);
@@ -102,10 +126,59 @@
 
 @media only screen and (max-width: 600px) {
   .i {
-    height: 95vh;
-    background-color: var(--bg-one-color);
-    position: relative;
+    height: auto;
+  }
+
+  .i-heading-one {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .i-heading-two {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .i-heading {
+    margin-top: 9vh;
+  }
+  .i-heading-text {
+    width: 90%;
+  }
+  .i-heading-buttonsContainer {
+    width: 90%;
+  }
+  .i-heading-buttonsContainer-apple {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .i-heading-buttonsContainer-apple > img {
+    height: 40px;
+  }
+  .i-heading-buttonsContainer-apple > div {
+    font-size: 1rem;
+  }
+  .i-heading-buttonsContainer-playstore {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .i-heading-buttonsContainer-playstore > img {
+    height: 40px;
+  }
+  .i-heading-buttonsContainer-playstore > div {
+    font-size: 1rem;
+  }
+  .i-mansion-600 {
+    position: static;
+    margin-top: 40px;
     width: 100%;
-    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .i-mobile {
+    position: absolute;
+    bottom: -10px;
+    right: -50px;
+    width: auto;
+    height: 250px;
   }
 }

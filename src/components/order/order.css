@@ -1,7 +1,6 @@
 .o {
   padding: 100px 250px;
   background-color: var(--bg-one-color);
-  overflow: hidden;
 }
 
 .o-text-heading {
@@ -76,4 +75,44 @@
   font-size: 0.875rem;
   color: var(--font-two-color);
   line-height: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .o {
+    padding: 40px 5px 20px 5px;
+  }
+  .o-text-heading {
+    font-size: 1.1rem;
+  }
+  .o-text-desc {
+    margin-top: 25px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .o-process-flow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .o-process-flow-order {
+    margin-bottom: 40px;
+  }
+  .o-process-flow-prepare {
+    margin-bottom: 40px;
+  }
+  .o-process-flow-deliver {
+    margin-bottom: 40px;
+  }
+  .o-process-flow-header {
+    margin-top: 2.2rem;
+    font-size: 1rem;
+  }
+
+  .o-process-flow-desc {
+    font-size: 0.875rem;
+    line-height: 1.7rem;
+  }
 }

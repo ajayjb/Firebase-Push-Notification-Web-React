@@ -3,7 +3,6 @@
   padding: 100px 200px 100px 200px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .a-upper {
@@ -29,6 +28,7 @@
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
+  line-height: 1.8rem;
 }
 
 .a-upper-right {
@@ -39,7 +39,19 @@
   justify-content: center;
 }
 
-.a-upper-right-card {
+.a-upper-right-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 98px;
+  border-radius: 12px;
+  background-color: var(--bg-three-color);
+  margin: 10px;
+}
+
+.a-upper-right-card-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,4 +147,73 @@
   color: var(--font-two-color);
   margin: 0;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .a {
+    padding: 40px 15px 50px 15px;
+  }
+  .a-upper {
+    flex-direction: column;
+  }
+  .a-upper-left-desc {
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 1.6rem;
+  }
+  .a-upper-right-card-left {
+    margin: 0;
+    margin-top: 40px;
+    margin-right: 7px;
+  }
+  .a-upper-right-card-right {
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 7px;
+  }
+  .a-lower {
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-lower-left {
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .a-lower-left-text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+  .a-lower-right {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .a-lower-right-item-one {
+    width: 55%;
+    margin-bottom: 45px;
+  }
+
+  .a-lower-right-item-two {
+    width: 55%;
+    margin-bottom: 45px;
+  }
+
+  .a-lower-right-item-three {
+    width: 55%;
+  }
+  .a-lower-right-item-header {
+    font-size: 1.05rem;
+    margin-top: 25px;
+  }
+  .a-lower-right-item-desc {
+    margin-top: 10px;
+  }
 }

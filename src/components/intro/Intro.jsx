@@ -2,11 +2,20 @@ import React from "react";
 import NavBar from "../navbar/NavBar";
 import "./intro.css";
 import mansion from "../../images/mansion.png";
+import mansionfor600 from "../../images/mansionfor600.png";
 import mobile from "../../images/mobile.png";
-import Apple from "../../images/Apple.png";
-import Playstore from "../../images/Playstore.png";
+import apple from "../../images/apple.svg";
+import playstore from "../../images/playstore.svg";
 
 const Intro = () => {
+  const [displayWidth, setDisplayWidth] = React.useState(window.screen.width);
+
+  const handleResize = () => {
+    setDisplayWidth(window.screen.width);
+  };
+
+  window.addEventListener("resize", handleResize);
+
   return (
     <div className="i">
       <NavBar />
@@ -21,34 +30,20 @@ const Intro = () => {
         </p>
         <div className="i-heading-buttonsContainer">
           <div className="i-heading-buttonsContainer-apple">
-            <img style={{ height: "40px", padding: "5px" }} src={Apple} />
-            <div
-              style={{
-                fontFamily: "Poppins, sans-serif",
-                fontSize: "1.25rem",
-                fontWeight: "500",
-                padding: "5px",
-              }}
-            >
-              App Store
-            </div>
+            <img src={apple} alt="apple" />
+            <div>App Store</div>
           </div>
           <div className="i-heading-buttonsContainer-playstore">
-            <img style={{ height: "40px", padding: "5px" }} src={Playstore} />
-            <div
-              style={{
-                fontFamily: "Poppins, sans-serif",
-                fontSize: "1.25rem",
-                fontWeight: "500",
-                padding: "5px",
-              }}
-            >
-              Play Store
-            </div>
+            <img src={playstore} alt="" />
+            <div>Play Store</div>
           </div>
         </div>
       </div>
-      <img className="i-mansion" src={mansion} alt="" />
+      {Number(displayWidth) <= 600 ? (
+        <img className="i-mansion-600" src={mansionfor600} alt="" />
+      ) : (
+        <img className="i-mansion" src={mansion} alt="" />
+      )}
       <img className="i-mobile" src={mobile} alt="" />
     </div>
   );

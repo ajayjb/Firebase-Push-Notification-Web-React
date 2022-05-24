@@ -6,7 +6,7 @@ const About = () => {
     <div className="a">
       <div className="a-upper">
         <div className="a-upper-left">
-          <h3 className="a-upper-left-about">About</h3>
+          <h3 className="a-upper-left-about">Who are we</h3>
           <p className="a-upper-left-desc">
             A wide range of available products, From order to checkout just
             within few clicks. Order at anytime and get your products delivered
@@ -14,11 +14,11 @@ const About = () => {
           </p>
         </div>
         <div className="a-upper-right">
-          <div className="a-upper-right-card">
+          <div className="a-upper-right-card-left">
             <h3 className="a-upper-right-card-header">100%</h3>
             <p className="a-upper-right-card-desc">Scan base Facility</p>
           </div>
-          <div className="a-upper-right-card">
+          <div className="a-upper-right-card-right">
             <h3 className="a-upper-right-card-header">100%</h3>
             <p className="a-upper-right-card-desc">Scan base Facility</p>
           </div>

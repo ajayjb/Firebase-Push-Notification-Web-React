@@ -5,22 +5,32 @@ import right from "../../images/right.png";
 
 const Testimonial = () => {
   const [slide, setSlide] = useState(0);
+  const [displayWidth, setDisplayWidth] = React.useState(window.screen.width);
+
+  const handleResize = () => {
+    setDisplayWidth(window.screen.width);
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  const tatalSlideDistance = displayWidth <= 600 ? 660 : 1200;
+  const slideMinus = displayWidth <= 600 ? 330 : 600;
 
   const leftSlide = (e) => {
     e.stopPropagation();
     if (slide === 0) {
-      setSlide(1360);
+      setSlide(tatalSlideDistance);
     } else {
-      setSlide(slide - 680);
+      setSlide(slide - slideMinus);
     }
   };
 
   const rightSlide = (e) => {
     e.stopPropagation();
-    if (slide === 1360) {
+    if (slide === tatalSlideDistance) {
       setSlide(0);
     } else {
-      setSlide(slide + 680);
+      setSlide(slide + slideMinus);
     }
   };
 
@@ -40,11 +50,63 @@ const Testimonial = () => {
           </p>
         </div>
 
-        <div className="t-container-carousel-container">
-          <div onClick={leftSlide} className="t-left-slider">
-            <img className="t-slider-image" src={left} alt="left arrow" />
+        <div
+          style={
+            displayWidth <= 600
+              ? {
+                  width: "330px",
+                  height: "200px",
+                  margin: "0 auto",
+                  position: "relative",
+                  borderRadius: "10px",
+                }
+              : {}
+          }
+          className="t-container-carousel-container"
+        >
+          <div
+            onClick={leftSlide}
+            style={
+              displayWidth <= 600
+                ? {
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "50%",
+                    position: "absolute",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    top: "50%",
+                    left: "0",
+                    transform: "translate(-50%, -50%)",
+                    backgroundColor: "#8ebc3e",
+                    zIndex: "1",
+                    cursor: "pointer",
+                    opacity: 0.5,
+                  }
+                : {}
+            }
+            className="t-left-slider"
+          >
+            <img
+              className="t-slider-image"
+              style={
+                displayWidth <= 600 ? { height: "14px", width: "14px" } : {}
+              }
+              src={left}
+              alt="left arrow"
+            />
           </div>
-          <div className="t-slider-container">
+          <div
+            style={
+              displayWidth <= 600
+                ? {
+                    borderRadius: "10px",
+                  }
+                : {}
+            }
+            className="t-slider-container"
+          >
             <div
               style={{
                 transform: `translateX(${-slide}px)`,
@@ -52,7 +114,23 @@ const Testimonial = () => {
               }}
               className="t--container-carousel-container-items"
             >
-              <div className="t-container-carousel-container-items-one">
+              <div
+                style={
+                  displayWidth <= 600
+                    ? {
+                        flexBasis: "1",
+                        flexShrink: "0",
+                        width: "330px",
+                        height: "200px",
+                        backgroundColor: "#fbfcea",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }
+                    : {}
+                }
+                className="t-container-carousel-container-items-one"
+              >
                 <div className="t-container-carousel-container-items-one-comment">
                   <p>A wide range of available products, From order to</p>
                   <p>checkout just within few clicks.</p>
@@ -74,7 +152,24 @@ const Testimonial = () => {
                   </div>
                 </div>
               </div>
-              <div className="t-container-carousel-container-items-two">
+
+              <div
+                style={
+                  displayWidth <= 600
+                    ? {
+                        flexBasis: "1",
+                        flexShrink: "0",
+                        width: "330px",
+                        height: "200px",
+                        backgroundColor: "#fbfcea",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }
+                    : {}
+                }
+                className="t-container-carousel-container-items-two"
+              >
                 <div className="t-container-carousel-container-items-one-comment">
                   <p>A wide range of available products, From order to</p>
                   <p>checkout just within few clicks.</p>
@@ -96,7 +191,24 @@ const Testimonial = () => {
                   </div>
                 </div>
               </div>
-              <div className="t-container-carousel-container-items-three">
+
+              <div
+                style={
+                  displayWidth <= 600
+                    ? {
+                        flexBasis: "1",
+                        flexShrink: "0",
+                        width: "330px",
+                        height: "200px",
+                        backgroundColor: "#fbfcea",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }
+                    : {}
+                }
+                className="t-container-carousel-container-items-three"
+              >
                 <div className="t-container-carousel-container-items-one-comment">
                   <p>A wide range of available products, From order to</p>
                   <p>checkout just within few clicks.</p>
@@ -119,8 +231,40 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div onClick={rightSlide} className="t-right-slider">
-            <img className="t-slider-image" src={right} alt="right arrow" />
+          <div
+            onClick={rightSlide}
+            style={
+              displayWidth <= 600
+                ? {
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "50%",
+                    position: "absolute",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    top: "50%",
+                    right: "0",
+                    transform: "translate(50%, -50%)",
+                    backgroundColor: "#8ebc3e",
+                    zIndex: "1",
+                    cursor: "pointer",
+                    opacity: 0.5,
+                  }
+                : {}
+            }
+            className="t-right-slider"
+          >
+            <img
+              className="t-slider-image"
+              style={
+                displayWidth <= 600
+                  ? { height: "14px", width: "14px", zIndex: "1" }
+                  : {}
+              }
+              src={right}
+              alt="right arrow"
+            />
           </div>
         </div>
       </div>
