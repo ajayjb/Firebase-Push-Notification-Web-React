@@ -8,7 +8,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-
+  const width = window.screen.width;
   return (
     <div className="f">
       <div className="f-top">
@@ -24,22 +24,38 @@ const Footer = () => {
           <div className="f-top-right-social">
             <a href="">
               <FacebookIcon
-                style={{ fontSize: "45px", margin: "20px", color: "#fff" }}
+                style={
+                  width <= 600
+                    ? { fontSize: "40px", margin: "20px", color: "#fff" }
+                    : { fontSize: "45px", margin: "20px", color: "#fff" }
+                }
               />
             </a>
             <a href="">
               <InstagramIcon
-                style={{ fontSize: "45px", margin: "20px", color: "#fff" }}
+                style={
+                  width <= 600
+                    ? { fontSize: "40px", margin: "20px", color: "#fff" }
+                    : { fontSize: "45px", margin: "20px", color: "#fff" }
+                }
               />
             </a>
             <a href="">
               <TwitterIcon
-                style={{ fontSize: "45px", margin: "20px", color: "#fff" }}
+                style={
+                  width <= 600
+                    ? { fontSize: "40px", margin: "20px", color: "#fff" }
+                    : { fontSize: "45px", margin: "20px", color: "#fff" }
+                }
               />
             </a>
             <a href="">
               <EmailIcon
-                style={{ fontSize: "45px", margin: "20px", color: "#fff" }}
+                style={
+                  width <= 600
+                    ? { fontSize: "40px", margin: "20px", color: "#fff" }
+                    : { fontSize: "45px", margin: "20px", color: "#fff" }
+                }
               />
             </a>
           </div>

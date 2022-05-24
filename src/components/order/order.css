@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 600px) {
   .o {
-    padding: 40px 5px 20px 5px;
+    padding: 60px 5px 30px 5px;
   }
   .o-text-heading {
     font-size: 1.1rem;
@@ -95,10 +95,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 65px;
   }
   .o-process-flow-order {
-    margin-bottom: 40px;
+    margin-bottom: 65px;
   }
   .o-process-flow-prepare {
     margin-bottom: 40px;
@@ -114,5 +114,8 @@
   .o-process-flow-desc {
     font-size: 0.875rem;
     line-height: 1.7rem;
+  }
+  .o-process-flow-image {
+    height: 60px;
   }
 }

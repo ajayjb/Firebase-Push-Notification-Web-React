@@ -151,14 +151,19 @@
 
 @media only screen and (max-width: 600px) {
   .a {
-    padding: 40px 15px 50px 15px;
+    padding: 50px 15px 60px 15px;
   }
   .a-upper {
     flex-direction: column;
   }
+
+  .a-upper-left-about {
+    margin: 0;
+  }
+
   .a-upper-left-desc {
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 15px;
     line-height: 1.6rem;
   }
   .a-upper-right-card-left {
