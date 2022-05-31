@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./footer.css";
 import FooterLogo from "../../images/FooterLogo.png";
 import EmailIcon from "@mui/icons-material/Email";
