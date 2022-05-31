@@ -1,0 +1,25 @@
+name: Freshliii Landing CI/CD 
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH and deploy Freshliii Landing
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          cd /srv/www/Freshliii-Static-Website/
+          git pull origin main
+          yarn install --production
+          npm run build
+          NODE_ENV="production" pm2 restart FreshliiiLanding --update-env
