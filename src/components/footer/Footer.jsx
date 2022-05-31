@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import FooterLogo from "../../images/FooterLogo.png";
+import logoFooter from "../../images/logoFooter.svg";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -13,7 +13,9 @@ const Footer = () => {
     <div className="f">
       <div className="f-top">
         <div className="f-top-left">
-          <img src={FooterLogo} alt="logo" />
+          <a href="/">
+            <img style={{ cursor: "pointer" }} src={logoFooter} alt="logo" />
+          </a>
           <p>
             Fast delivery, which is active all over the world, serves with many
             transportation vehicles.

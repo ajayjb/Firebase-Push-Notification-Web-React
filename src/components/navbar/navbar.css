@@ -9,6 +9,7 @@
 
 .n-logo-image {
   height: 50px;
+  cursor: pointer;
 }
 
 .n-links-wrapper {

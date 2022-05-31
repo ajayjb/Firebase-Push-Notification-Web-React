@@ -64,6 +64,10 @@ const Testimonial = () => {
           }
           className="t-container-carousel-container"
         >
+          {/* <div className="t-container-carousel-container-dummy-card-one"></div>
+
+          <div className="t-container-carousel-container-dummy-card-two"></div> */}
+
           <div
             onClick={leftSlide}
             style={
