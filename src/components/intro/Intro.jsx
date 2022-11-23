@@ -16,6 +16,23 @@ const Intro = () => {
 
   window.addEventListener("resize", handleResize);
 
+  function notifyMe() {
+    if (!("Notification" in window)) {
+      alert("This browser does not support desktop notification");
+    } else if (Notification.permission === "granted") {
+      new Notification("Hi there!", {
+        body: "Fuck off",
+        icon: playstore,
+      });
+    } else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then((permission) => {
+        if (permission === "granted") {
+          new Notification("Hi there!");
+        }
+      });
+    }
+  }
+
   return (
     <div className="i">
       <NavBar />
@@ -29,12 +46,15 @@ const Intro = () => {
           Choose fresh, eat fresh and stay fresh with FRESHLIII.
         </p>
         <div className="i-heading-buttonsContainer">
-          <div className="i-heading-buttonsContainer-apple">
+          <div onClick={notifyMe} className="i-heading-buttonsContainer-apple">
             <img src={apple} alt="apple" />
             <div>App Store</div>
           </div>
-          <div className="i-heading-buttonsContainer-playstore">
-            <img src={playstore} alt="" />
+          <div
+            onClick={notifyMe}
+            className="i-heading-buttonsContainer-playstore"
+          >
+            <img className="apple" src={playstore} alt="" />
             <div>Play Store</div>
           </div>
         </div>

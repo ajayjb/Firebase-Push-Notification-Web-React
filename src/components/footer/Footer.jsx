@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="f-top-right">
           <div className="f-top-right-text">Get in Touch</div>
           <div className="f-top-right-social">
-            <a href="">
+            <a href="/">
               <FacebookIcon
                 style={
                   width <= 600
@@ -33,7 +33,7 @@ const Footer = () => {
                 }
               />
             </a>
-            <a href="">
+            <a href="/">
               <InstagramIcon
                 style={
                   width <= 600
@@ -42,7 +42,7 @@ const Footer = () => {
                 }
               />
             </a>
-            <a href="">
+            <a href="/">
               <TwitterIcon
                 style={
                   width <= 600
@@ -51,7 +51,7 @@ const Footer = () => {
                 }
               />
             </a>
-            <a href="">
+            <a href="/">
               <EmailIcon
                 style={
                   width <= 600
